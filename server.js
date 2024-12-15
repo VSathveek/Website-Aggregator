@@ -5,7 +5,7 @@ const app = express();
 
 app.use(cors());
 
-const API_KEY = '1e1293506e4f49ce961e52d87bfaa8e8';
+const API_KEY = 'Enter Your API key';
 const BASE_URL = 'https://newsapi.org/v2/everything';
 
 app.get('/news', async (req, res) => {
