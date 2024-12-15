@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="styles2.css">
+    <title>Website Aggregator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="group1">
+            <div class="logo" onclick="showHomePage()">😁</div>
+            <div class="find">Website Categories</div>
+            <div class="find" onclick="showCategory('News')">News</div>
+        </div>
+        <div class="group2">
+            <input type="text" id="search-input" placeholder="Search for websites" class="search-input">
+            <div class="find" onclick="searchApps()">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="find">Account</div>
+        </div>
+    </div>
+    <div class="category-header">
+        <button class="category-button" onclick="showCategory('Trending')">Trending</button>
+        <button class="category-button" onclick="showCategory('AI')">AI</button>
+        <button class="category-button" onclick="showCategory('SocialMedia')">Social Network</button>
+    </div>
+    <div class="slider">
+        <div id="home" class="slide">
+            <div class="visibility">
+                <div class="Categories">Website Aggregator</div>
+                <p class="home-content">
+                    The Website Aggregator is a simple yet powerful tool designed to bring together a curated collection of websites in one place. Similar to how the Play Store organizes apps, this platform showcases various websites as clickable image tiles representing different categories or services.
+
+Users can browse through the collection of websites by simply clicking on the images, which act as shortcuts. Once clicked, the user is redirected to the respective website, allowing for quick and easy access to various online resources, services, or platforms.
+
+Features:
+Visual Representation: Each website is represented by an image or logo, making the selection process visually intuitive and engaging.
+Easy Navigation: The user can effortlessly browse through different categories or websites with a simple click.
+No Sign-up Required: Just click on the website image and be instantly redirected.
+Categorized Listings: Websites can be organized into categories (e.g., social media, news, entertainment, education) for easier browsing.
+Purpose:
+This aggregator aims to provide users with a centralized hub of popular or useful websites, functioning as a "storefront" for websites, where one can quickly discover and access various platforms without the need to search for them individually.
+
+It’s perfect for users who want quick access to a variety of websites and a visually organized browsing experience.
+
+
+
+
+                    
+                </p>
+            </div>
+        </div>
+        <div id="Trending" class="slide" style="display:none;">
+            <div class="visibility">
+                <div class="Categories">Trending</div>
+                <div class="icons" id="trending-container"></div>
+            </div>
+        </div>
+        <div id="AI" class="slide" style="display:none;">
+            <div class="visibility">
+                <div class="Categories">AI</div>
+                <div class="icons" id="ai-container"></div>
+            </div>
+        </div>
+        <div id="SocialMedia" class="slide" style="display:none;">
+            <div class="visibility">
+                <div class="Categories">Social Network</div>
+                <div class="icons" id="socialmedia-container"></div>
+            </div>
+        </div>
+        <div id="News" class="slide" style="display:none;">
+            <div class="visibility">
+                <div class="Categories">News</div>
+                <div class="news-container" id="news-container"></div>
+            </div>
+        </div>
+        <div id="search-results" class="slide" style="display:none;">
+            <div class="visibility">
+                <div class="Categories">Search Results</div>
+                <div class="icons" id="search-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
