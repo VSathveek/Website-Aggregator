@@ -216,7 +216,7 @@ function displaySearchResults(results) {
 }
 
 function loadNews() {
-    const apiKey = '1e1293506e4f49ce961e52d87bfaa8e8';
+    const apiKey = 'Enter Your API key';
     const url = `https://newsapi.org/v2/everything?q=technology&apiKey=${apiKey}`;
     
     fetch(url)
